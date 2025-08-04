@@ -1,0 +1,30 @@
+# .github/workflows/ci.yml
+name: Build & Test Next.js App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 코드
+        uses: actions/checkout@v4
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 의존성 설치
+        run: npm install
+
+      - name: 빌드 실행
+        run: npm run build
+
+      - name: 테스트 (기본은 없음)
+        run: echo "No tests yet"
