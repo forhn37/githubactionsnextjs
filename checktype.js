@@ -1,1 +1,5 @@
 console.log(typeof({an:"20"}))
+console.log(typeof({an:"20"}))
+console.log(typeof({an:"20"}))
+console.log(typeof({an:"20"}))
+console.log(typeof({an:"20"}))
