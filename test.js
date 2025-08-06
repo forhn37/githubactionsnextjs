@@ -65,18 +65,18 @@ const practice = {
       return result;
     }
 
-    // const students = [
-    //   { name: "김영희", grade: 95, hobby: "독서" },
-    //   { name: "박민수", grade: 78, hobby: "게임" },
-    //   { name: "이철수", grade: 85, hobby: "음악" },
-    // ];
+    const students = [
+      { name: "김영희", grade: 95, hobby: "독서" },
+      { name: "박민수", grade: 78, hobby: "게임" },
+      { name: "이철수", grade: 85, hobby: "음악" },
+    ];
 
-    const studentYaho ={
-      yaho : {ane : "20"}
-    }
+    // const studentYaho ={
+    //   yaho : {ane : "20"}
+    // }
 
     students.forEach((student) => {
-      console.log(`${student.name} 처리결과:`, processStudent(studentYaho));
+      console.log(`${student.name} 처리결과:`, processStudent(students));
     });
 
     const excellentStudents = students.filter((student) => {
