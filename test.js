@@ -70,6 +70,7 @@ const practice = {
       { name: "박민수", grade: 78, hobby: "게임" },
       { name: "이철수", grade: 85, hobby: "음악" },
     ];
+    const ddd = 0;
 
     // const studentYaho ={
     //   yaho : {ane : "20"}
